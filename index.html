@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Guillem UJ</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+        <!--put your external stylesheet links here-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Gudea&family=Roboto+Mono:wght@100;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!--you can also place internal styles here;
+             place these within <style> tags-->
+        <script>
+            function myFunction(){
+                alert("My alert!");
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Kept as otherwise the pop ups don't work. IDK why :0 -->
+        <header>
+            <button class ="nav-toggle">
+            </button>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h2 class="section__title section__title--intro">
+                <strong>Guillem Ulldemolins i Jornet</strong>
+                <p class="section__subtitle">Geògraf / Tècnic SIG<br><br>
+                    Grau en Geografia per la Universitat de Barcelona<br>
+                    Màster en Tecnologies Geoespacials per les universitats NOVA de Lisboa i WWU de Münster<br><br>
+                </p>
+            </h2> <!--section__intro is modifier class, different from section__title which is a default class-->
+            
+            <img src='img/portada.png' alt="" class='intro__img'>
+        </section>
+
+        
+<!--
+        
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>GIS Data</br>Analysis</h3>
+                    <p>process geospatial data in Python, mainly expert in these packages: GeoPandas, Pandas, Shapely, OSMnx, ..., 
+                        also familiar with the most popular GIS data formats: JSON, GeoJSON, shapefile, XML, CSV,... </p>
+                    <p>have knowledge of machine learning and implement statistical models in R: SVM, Logistic models, clustering, PCA...</p>
+                </div>
+                <div class="service">
+                    <h3>Interactive Cartography</h3>
+                    <p>specilize in HTML/CSS/JavaScript to create interactive map websites, along with multiple popular map libraries: 
+                        Mapbox JS GL, Leaflet.js, Turf.js, ArcGIS RESTful API, GoogleMaps API, foursquare API, HERE API, ...
+                    </p>
+                    <p>implement JavaScript map visualization libraries: d3.js, ArcGIS API, Leaflet.js, ...</p>
+                </div> 
+                <div class="service">
+                    <h3>Map</br>Design</h3>
+                    <p>create maps with combination of multiple technologies: ArcGIS Pro, ArcMap, ArcGIS Online, Mapbox Studio, Illustrator, DataShader, ...</p>
+                    <p>apply effectively domain knowledge of cartography, keeping gaining insight from <a href="https://gistbok.ucgis.org/">GIS&T Body of Knowledge</a>.</p>
+                </div> 
+                <div class="service">
+                    <h3>Database Manipulation</h3>
+                    <p>create ER-diagram and relational schema.</p>
+                    <p>use PostgresSQL, PostGIS for geospatial data (spatial) query and geodatabase management.</p>
+                </div> 
+            </div> 
+            <a href="#work" class="btn">My projects</a>
+        </section>
+
+        <section class = "about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Master's in GIS / Cartography @ UW - Madison</p>
+
+            <div class="about-me__body">
+                <p><strong>I love playing around location data</strong>.
+                <p>6+ years of experience in spatial data analysis and geo-visualization.</p>
+                <p>Travelling is one of my favorites, which I can always find inspirations from, 
+                    so I create a lot of interactive map tools as well as visualization map related to tourism.
+                    I develop a grand passion for inspecting spatial and temporal variability (heterogeneity) 
+                    by creating interactive maps and static cartographic infographics, 
+                    aimed at making the information more effectively understood by the public.
+                </p>
+                <p>To be NING ... ;)</p>
+            </div>
+
+            <img src="img/ynliu-02.png" alt="" class='about-me__img'>
+        </section>
+    -->
+        <!--My work-->
+        <section class="my-work" id="work">
+            <h2 class="section__title">Portafolis</h2>
+            <p class ="section__subtitle">Recull dels darrers treballs realitzats als estudis de grau, de màster i per compte propi.</p>
+            <p></p>
+
+            <div class="portfolio">
+                <a data-modal-target="#modal1" class = "portfolio__item">
+                    <img src="img/cities_germany_sq.jpg" alt="ciutats_alemanyes" class="portfolio__img">
+                    <div class="text-overlay">
+                        <div class="text">En cotxe per les ciutats alemanyes</div>
+                    </div>
+                </a>
+                <a data-modal-target="#modal2" class = "portfolio__item">
+                    <img src="img/divide_us_sq.jpg" alt="divide_us" class="portfolio__img">
+                    <div class="text-overlay">
+                        <div class="text">Els grans perills dels EUA</div>
+                    </div>
+                </a>
+                <a data-modal-target="#modal3" class = "portfolio__item">
+                    <img src="img/cor_caire_sq.png" alt="cor_caire" class="portfolio__img">
+                    <div class="text-overlay">
+                        <div class="text">El cor d'El Caire</div>
+                    </div>
+                </a>
+                <a data-modal-target="#modal4" class = "portfolio__item">
+                    <img src="img/geomundus.png" alt="geomundus" class="portfolio__img">
+                    <div class="text-overlay">
+                        <div class="text">14a Conferència Geomundus</div>
+                    </div>
+                </a>
+                </a>
+                <a data-modal-target="#modal5" class = "portfolio__item">
+                    <img src="img/pasteis_sq.png" alt="pasteis" class="portfolio__img">
+                    <div class="text-overlay">
+                        <div class="text">Optimització de serveis de vehicles</div>
+                    </div>
+                </a>
+                <a data-modal-target="#modal6" class = "portfolio__item">
+                    <img src="img/petroli_sq.jpg" alt="petroli" class="portfolio__img">
+                    <div class="text-overlay">
+                        <div class="text">Vessament de petroli al Perú</div>
+                    </div>
+                </a>
+                <a data-modal-target="#modal7" class = "portfolio__item">
+                    <img src="img/trito_sq.png" alt="trito" class="portfolio__img">
+                    <div class="text-overlay">
+                        <div class="text">Distribució del tritó del Montseny</div>
+                    </div>
+                </a>
+                <a data-modal-target="#modal8" class = "portfolio__item">
+                    <img src="img/portfolio-8.png" alt="nps-oregon" class="portfolio__img">
+                    <div class="text-overlay">
+                        <div class="text">NPS in Oregon</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer class='footer'>
+            <a class="text"></a>Guillem Ulldemolins i Jornet, 2022.<br> 
+            Descarrega <a href="img/ulldemolinsjornet_cv_2022_cat.pdf"> <b>aquí</b></a> el meu currículum en format PDF.</a> 
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/guillemuj">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:guillemullde@gmail.com">
+                        <span>&#9993;</span>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/guillem-ulldemolins-jornet-396998230/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </footer>
+
+         <!--pop up -->
+         <div class="modal" id="modal1">
+            <div class="modal-header">
+              <div class="title">
+                  <a href="img/cities_germany.pdf"><h3>Àrees de servei: Ciutats alemanyes</h3>
+              </div>
+            </div>
+            <div class="modal-body">
+              <img src='img/cities_germany.jpg' class = "modal__img">
+              <p>Area al voltant de les principals ciutats alemanyes que pot ser coberta amb cotxe</p></a>
+              <p> aaaaaaaaaaaaaaaa</p>
+            </div>
+          </div>
+          <div id="overlay"></div>
+  
+          <div class="modal" id="modal2">
+              <div class="modal-header">
+                  <div class="title">
+                      <a href="img/divide_us.pdf"><h3>Tres maneres de dividir els Estats Units d'Amèrica</h3>
+                  </div>
+              </div>
+              <div class="modal-body">
+                  <img src='img/divide_us.jpg' class = "modal__img">
+                  <p>A visualization interactive map with bar chart.</p></a>
+                  <p> aaaaaaaaaaaa.</p>
+              </div>
+          </div>
+          <div id="overlay"></div>
+  
+          <div class="modal" id="modal3">
+              <div class="modal-header">
+                  <div class='title'> 
+                      <a href="img/cor_caire.gif"><h3>El cor bategant d'EL Caire</h3>
+                  </div>    
+                  <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <img src='img/cor_caire.gif' class = "modal__img">
+                  <p>aaaaaaaa</p></a>
+                  <p>Tore details.
+                  </p>
+              </div>
+          </div>
+          <div id="overlay"></div>
+  
+          <div class="modal" id="modal4">
+              <div class="modal-header">
+                  <div class='title'> 
+                      <a href="https://geomundus.org"><h3>14a Conferència Geomundus</h3> </a>
+                  </div>
+              </div>
+              <div class="modal-body">
+                  <p>lallllallalal
+  
+                  </p>
+              </div>
+          </div>
+          <div id="overlay"></div>
+  
+          <div class="modal" id="modal5">
+              <div class="modal-header">
+                  <div class='title'> 
+                      <a href="https://github.com/andre-kotze/pasteis-dc"><h3>Pasteis DC: Optimització de la distribució de mercaderies</h3>
+                  </div> 
+              </div>
+              <div class="modal-body">
+                  <img src='img/pasteis.png' height="400px" class = "modal__img">
+                  <p>A Sants.</p></a>
+                  <p>Todas.
+                  </p>
+              </div>
+          </div>
+          <div id="overlay"></div>
+  
+          <div class="modal" id="modal6">
+              <div class="modal-header">
+                  <div class='title'> 
+                      <a href="https://raw.githubusercontent.com/tooobening/tooobening.github.io/main/img/portfoilo-06.jpg"><h3>U.S. Outdoor Recreation GDP</h3>
+                  </div> 
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <img src='img/portfoilo-06.jpg' height='400px' class = "modal__img">
+                  <p>A Static proportional and choropleth map showing outdoor reacreation GDP in each state in the U.S.</p></a>
+                  <p>In 2007, more than 400 billion dollars of value-added are generated by outdoor recreation in the US. 
+                      How the value is spatially distributed shows in the figure, where the outdoors consists of 3 types: 
+                      Core outdoor recreation such as RVing, hiking, snow activities, other one like amusement parks, outdoor concerts, 
+                      and the supporting one such as local trips, transportation, government expenditures. 
+                  </p>
+              </div>
+          </div>
+          <div id="overlay"></div>
+  
+          <div class="modal" id="modal7">
+              <div class="modal-header">
+                  <div class='title'> 
+                      <a href="https://github.com/tooobening/tooobening.github.io/blob/main/img/portfolio-7.png?raw=true"><h3>Africa Physical Geography</h3>
+                  </div> 
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <img src='img/portfolio-7.png' height="400px" class = "modal__img">
+                  <p>A African map of physical geography.</p></a>
+                  <p>In this map I played around the label's appearance and the placement of both cities and the physical features. 
+                      It is interesting and effectively visualized when typography representing rivers follow the path of themselves physically.
+                      Also when typography representing inland sea fits exactly the shape of the sea itself. Data source is Nature Earth. 
+                  </p>
+              </div>
+          </div>
+          <div id="overlay"></div>
+  
+          <div class="modal" id="modal8">
+              <div class="modal-header">
+                  <div class='title'> 
+                      <a href="https://raw.githubusercontent.com/tooobening/tooobening.github.io/main/img/portfolio-8.png?raw=true"><h3>NPS in Oregon</h3>
+                  </div> 
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <img src='img/portfolio-8.png' height="400px" class = "modal__img">
+                  <p>A Static map visualizing state-wide national park services in Oregon.</p></a>
+                  <p>There are several national parks, historical parks and National monuments are located in Oregon State. From this map
+                      we can easily have a brief understaning of all the spatial relation between the national parks services amd the asministrative boundaries, 
+                      as well as the main cities in the state. US Forest Service (USFS) which is under the Department of Agriculture is not included in this map because it is not affliated with NPS, which is under the Department of Interior. 
+                      Find more related info about the difference between NPS and USFS <a href="https://www.nps.gov/grsm/planyourvisit/np-versus-nf.htm"><b>here</b></a>.  
+                  </p>
+              </div>
+          </div>
+          <div id="overlay"></div>
+  
+          <div class="modal" id="modal9">
+              <div class="modal-header">
+                  <div class='title'> 
+                      <a href="https://raw.githubusercontent.com/tooobening/tooobening.github.io/main/img/portfolio-9.png?raw=true"><h3>I Love Window Blossom</h3>
+                  </div> 
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <img src='img/portfolio-9.png' height='400px' class = "modal__img">
+                  <p>A static map combining the street networks and the special pattern of the window on architecture in Tainan city, Taiwan.</p></a>
+                  <p>Tainan is the oldest city in Taiwan. Its anitique feeling immersed in the histroy and the wrought iron window complement each other perfectly. 
+                      This work is mainly to mapping the location of the buildings with special pattern of their iron windows and designed elevation. 
+                      you can also check the website introducing this historical areas with its aesthetic of the craft <a href="https://tooobening.github.io/i-blossom/"><b>here</b></a>.  
+                  </p>
+              </div>
+          </div>
+          <div id="overlay"></div>
+  
+  
+          <!--you can also use this space for internal scripts;
+          place these within <script> tags-->
+  
+          <!--put your external script links here-->
+          <script type="text/javascript" src="js/main.js"></script>
+      </body>
+  </html>
